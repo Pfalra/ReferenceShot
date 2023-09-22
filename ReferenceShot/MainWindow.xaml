@@ -1,0 +1,25 @@
+﻿<Window x:Name="MainWindow1" x:Class="DisagReferenceShot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DisagReferenceShot"
+        mc:Ignorable="d"
+        Title="ReferenceShot" Height="428" Width="779" Background="#FF1E1E1E" FontFamily="Calibri" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/icons8-sniper-50.png">
+    <Canvas x:Name="MainCanvas" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="0,0,10,13" RenderTransformOrigin="0.5,0.5">
+        <Canvas.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleY="0"/>
+                <RotateTransform/>
+                <TranslateTransform Y="0"/>
+            </TransformGroup>
+        </Canvas.RenderTransform>
+        <Button x:Name="PathChoiceButton" Content="File" Canvas.Left="10" Canvas.Top="10" Background="#FF585858" FontStyle="Normal" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="38" Margin="0,0,0,0" Padding="2,2,2,2" UseLayoutRounding="True" Click="PathChoiceButton_Click"/>
+        <Label x:Name="PathLabel" Content="No file" Canvas.Left="58" Canvas.Top="11" HorizontalAlignment="Left" VerticalAlignment="Center" Width="333" Foreground="White" Padding="2,2,2,2" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True"/>
+        <ListBox x:Name="ReferenceShooterList" Height="320" Width="349" HorizontalAlignment="Left" Canvas.Top="64" VerticalAlignment="Center" Canvas.Left="10" Background="#FF585858" BorderBrush="#FF2C2C2C" Foreground="White" SelectionChanged="ReferenceShooterList_SelectionChanged" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True"/>
+        <Label x:Name="ReferenceShooterLabel" Content="Reference Shooter" Canvas.Left="10" Canvas.Top="39" Width="306" Foreground="White" Padding="2,2,2,2" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontStyle="Italic" Height="20"/>
+        <ListBox x:Name="ResultListBox" Height="320" Width="375" Canvas.Top="63" Canvas.Left="379" Background="#FF585858" BorderBrush="#FF2C2C2C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" SelectionChanged="ResultListBox_SelectionChanged"/>
+        <Label x:Name="ResultLabel" Content="Result" Canvas.Left="380" Canvas.Top="39" Width="172" Foreground="White" Padding="2,2,2,2" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontStyle="Italic" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
